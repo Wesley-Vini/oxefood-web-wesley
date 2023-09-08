@@ -2,7 +2,7 @@ import React from "react";
 import InputMask from 'react-input-mask';
 import { Button, Container, Divider, Form, Icon } from 'semantic-ui-react';
 
-export default function FormProduto () {
+export default function FormCliente () {
 
     return (
 
@@ -12,7 +12,7 @@ export default function FormProduto () {
 
                 <Container textAlign='justified' >
 
-                    <h2> <span style={{color: 'darkgray'}}> Cliente &nbsp;<Icon name='angle double right' size="small" /> </span> Cadastro </h2>
+                    <h2> <span style={{color: 'darkgray'}}> Produto &nbsp;<Icon name='angle double right' size="small" /> </span> Cadastro </h2>
 
                     <Divider />
 
@@ -25,14 +25,14 @@ export default function FormProduto () {
                                 <Form.Input
                                     required
                                     fluid
-                                    label='Nome'
+                                    label='Titulo'
                                     maxLength="100"
                                 />
 
                                 <Form.Input
                                     required
                                     fluid
-                                    label='CPF'>
+                                    label='Codigo de Produto'>
                                     <InputMask
                                         required
                                         mask="999.999.999-99"
@@ -41,39 +41,38 @@ export default function FormProduto () {
 
                             </Form.Group>
                             
+                            <Form.Input
+                                    required
+                                    fluid
+                                    label='Descrição'
+                                    maxLength="100"
+                                />
+
                             <Form.Group>
 
                                 <Form.Input
                                     fluid
-                                    label='Fone Celular'
+                                    label='Valor unitario'
                                     width={6}>
-                                    <InputMask 
-                                        mask="(99) 9999.9999"
-                                    /> 
                                 </Form.Input>
 
                                 <Form.Input
                                     fluid
-                                    label='Fone Fixo'
+                                    label='Tempo de Entrega Mínima '
                                     width={6}>
-                                    <InputMask 
-                                        mask="(99) 9999.9999"
-                                    /> 
                                 </Form.Input>
 
                                 <Form.Input
                                     fluid
-                                    label='Data Nascimento'
-                                    width={6}
-                                >
-                                    <InputMask 
-                                        mask="99/99/9999" 
-                                        maskChar={null}
-                                        placeholder="Ex: 20/03/1985"
-                                    /> 
+                                    label='Tempo de entrega máximo'
+                                    width={6}>
+                                    
                                 </Form.Input>
 
                             </Form.Group>
+                        
+
+
                         
                         </Form>
                         

@@ -75,6 +75,9 @@ export default function FormCliente () {
 
                             </Form.Group>
                         
+
+
+                        
                         </Form>
                         
                         <div style={{marginTop: '4%'}}>

@@ -30,23 +30,12 @@ export default function FormCliente () {
              console.log('Erro ao incluir o um cliente.')
         })
     }
-    axios.post("http://localhost:8082/api/cliente", clienteRequest)
-    .then((response) => {
-         console.log('Cliente cadastrado com sucesso.')
-    })
-    .catch((error) => {
-         console.log('Erro ao incluir o um cliente.')
-    })
-}
-
-
-    return (
-
-      
     
+
+       return (
         <div>
 
-        <MenuSistema />
+            <MenuSistema />
 
             <div style={{marginTop: '3%'}}>
 
@@ -172,6 +161,6 @@ export default function FormCliente () {
             </div>
         </div>
 
-    );
+);
 
 }
